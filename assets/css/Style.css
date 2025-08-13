@@ -1,0 +1,321 @@
+@charset "UTF-8";
+/* attendance.scss */
+.card-header {
+  font-weight: 600;
+}
+
+#attendanceFilters .form-select, #attendanceFilters .form-control {
+  border-radius: 0.5rem;
+}
+
+.table thead th {
+  font-weight: 600;
+}
+
+/* Radio button etiketlərinin görünüşü */
+.attendance-status label {
+  margin-right: 1.5rem;
+  cursor: pointer;
+  font-weight: normal;
+}
+.attendance-status label input[type=radio] {
+  margin-right: 0.5rem;
+}
+
+/* Responsivlik üçün kiçik ekranlarda boşluqlar */
+@media (max-width: 767.98px) {
+  #attendanceFilters .col-md-2 {
+    margin-top: 1rem;
+  }
+}
+/* courses.scss */
+.card-header {
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.table-responsive {
+  overflow-x: auto;
+}
+
+/* Modalın başlığı üçün */
+#courseModalLabel {
+  font-weight: 600;
+}
+
+/* Edit və Delete düymələrinin görünüşü */
+.btn-edit, .btn-delete {
+  border: none;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.8rem;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.btn-edit {
+  color: #0d6efd; /* Mavi rəng */
+  background: transparent;
+}
+.btn-edit:hover {
+  background-color: rgba(13, 110, 253, 0.1);
+}
+
+.btn-delete {
+  color: #dc3545; /* Qırmızı rəng */
+  background: transparent;
+}
+.btn-delete:hover {
+  background-color: rgba(220, 53, 69, 0.1);
+}
+
+/* Responsive dizayn üçün xüsusi CSS */
+@media (max-width: 991.98px) {
+  .container-fluid {
+    padding: 0 15px;
+  }
+}
+body {
+  margin: 0;
+  background-color: #f8f9fa;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 240px;
+  height: 100vh;
+  background-color: #343a40;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-top: 20px;
+  transition: all 0.3s ease-in-out;
+  z-index: 2000;
+}
+
+.sidebar a {
+  color: white;
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+.sidebar a:hover {
+  background-color: #495057;
+}
+
+.sidebar.hidden {
+  transform: translateX(-100%);
+}
+
+.sidebar.show {
+  transform: translateX(0);
+}
+
+/* Toggle btn */
+.toggle-container {
+  padding: 15px;
+  background-color: #ffffff;
+  position: sticky;
+  top: 0;
+  z-index: 1001;
+}
+
+.toggle-btn {
+  font-size: 24px;
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .toggle-btn {
+    display: block;
+  }
+}
+/* Main content */
+.main-content {
+  margin-left: 240px;
+  padding: 30px;
+  transition: margin-left 0.3s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    margin-left: 0;
+    padding: 20px;
+  }
+}
+.card-box {
+  border-radius: 15px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+canvas {
+  max-width: 100%;
+}
+
+.toggle-btn {
+  font-size: 24px;
+  cursor: pointer;
+  color: white;
+  padding: 10px;
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .toggle-btn {
+    display: inline-block;
+  }
+}
+.social-login {
+  text-align: center;
+}
+.social-login .facebook i {
+  color: white;
+  padding: 6px 9px 6px 9px;
+  background-color: #0066a2;
+  border-radius: 3px;
+}
+.social-login .google {
+  margin-left: 5px;
+  border-radius: 3px;
+}
+.social-login .google i {
+  border-radius: 3px;
+  background-color: red;
+  padding: 6px;
+  color: white;
+}
+
+.login-container {
+  max-width: 900px;
+  margin: auto;
+  margin-top: 120px;
+  background-color: #fff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.login-left {
+  background: linear-gradient(to bottom, #0066a2, #00cfff);
+  color: #fff;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  min-width: 300px;
+}
+
+.login-left h1 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.login-right {
+  flex: 1;
+  padding: 40px;
+  min-width: 300px;
+}
+.login-right form a {
+  color: rgba(0, 0, 0, 0.502);
+}
+.login-right form p {
+  color: rgba(0, 0, 0, 0.502);
+  display: inline;
+}
+.login-right form .end-word a {
+  color: black;
+}
+
+.login-btn {
+  background-color: #00cfff;
+  border: none;
+}
+
+.login-btn:hover {
+  background-color: #00b2d6;
+}
+
+.social-btn i {
+  margin-right: 8px;
+}
+
+.divider {
+  text-align: center;
+  position: relative;
+  margin: 20px 0;
+}
+
+.social-login span {
+  color: rgba(0, 0, 0, 0.502);
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 45%;
+  height: 1px;
+  background: #ccc;
+}
+
+.divider::before {
+  left: 0;
+}
+
+.divider::after {
+  right: 0;
+}
+
+.divider span {
+  padding: 0 10px;
+  background: #fff;
+  color: #888;
+}
+
+body {
+  background-color: #f8f9fa;
+}
+
+.card {
+  border-radius: 10px;
+}
+
+.table-hover tbody tr:hover {
+  background-color: #e9f5ff;
+  cursor: pointer;
+}
+
+.text-success {
+  color: #28a745 !important;
+}
+
+.text-danger {
+  color: #dc3545 !important;
+}
+
+.btn-sm {
+  font-size: 0.85rem;
+}
+
+body {
+  background-color: #f8f9fa;
+}
+
+.profile-img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.card {
+  border-radius: 10px;
+}/*# sourceMappingURL=Style.css.map */

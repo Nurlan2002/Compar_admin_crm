@@ -1,0 +1,33 @@
+/* attendance.scss */
+
+.card-header {
+    font-weight: 600;
+}
+
+#attendanceFilters {
+    .form-select, .form-control {
+        border-radius: 0.5rem;
+    }
+}
+
+.table thead th {
+    font-weight: 600;
+}
+
+/* Radio button etiketlərinin görünüşü */
+.attendance-status label {
+    margin-right: 1.5rem;
+    cursor: pointer;
+    font-weight: normal;
+    
+    input[type="radio"] {
+        margin-right: 0.5rem;
+    }
+}
+
+/* Responsivlik üçün kiçik ekranlarda boşluqlar */
+@media (max-width: 767.98px) {
+    #attendanceFilters .col-md-2 {
+        margin-top: 1rem;
+    }
+}

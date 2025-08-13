@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="./assets/vendors/bootstrap.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="./assets/css/style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+
+<body>
+
+<!-- Sidebar -->
+<div id="sidebar" class="sidebar">
+
+  <div class="d-md-none text-end pe-3">
+    <div id="toggleBtn"><i class="fas fa-times toggle-btn" ></i></div>
+    
+  </div>
+
+  <h4 class="text-center">Compar Academy</h4>
+  <a href="./Base.html">Base</a>
+  <a href="./Dashboard.html">Dashboard</a>
+  <a href="./Students_list.html">Students</a>
+  <a href="./Groups.html">Groups</a>
+  <a href="./Courses.html">Courses</a>
+  <a href="./Attendance_form.html">Attendence</a>
+  <a href="./Login.html">Login</a>
+  <a href="./Student_detail.html">Students details</a>
+  <a href="./Payments.html">Payments</a>
+</div>
+
+  <!-- Main content -->
+  <div class="main-content">
+    <div class="container-fluid">
+      <h2 class="mb-4">Dashboard</h2>
+
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <div class="card card-box text-center p-3">
+            <h5>Aktiv Tələbə</h5>
+            <h2 class="text-primary">125</h2>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="card card-box text-center p-3">
+            <h5>Bugünkü Dərslər</h5>
+            <h2 class="text-success">6</h2>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="card card-box text-center p-3">
+            <h5>Ay Gəliri</h5>
+            <h2 class="text-warning">₼ 3,200</h2>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="card card-box text-center p-3">
+            <h5>Aylıq Qeydiyyat</h5>
+            <h2 class="text-danger">45</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-5">
+        <div class="col-12">
+          <div class="card card-box p-4">
+            <h5 class="mb-3">Davamiyyət Cədvəli</h5>
+            <canvas id="attendanceChart" height="100"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="./assets/vendors/bootstrap.bundle.js"></script>
+  <script src="./assets/js/main.js"></script>
+</body>
+</html>

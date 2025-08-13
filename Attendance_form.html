@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Davamiyyət - Compar Academy</title>
+    <link rel="stylesheet" href="./assets/vendors/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/Style.css">  </head>
+<body>
+
+    <div class="container-fluid mt-4">
+        <div class="card shadow-sm">
+            <div class="card-header bg-primary text-white">
+                <h4 class="mb-0">Davamiyyət Jurnalı</h4>
+            </div>
+            <div class="card-body">
+                <form id="attendanceFilters">
+                    <div class="row g-3 align-items-end">
+                        <div class="col-md-5">
+                            <label for="groupSelect" class="form-label">Qrup Seçin</label>
+                            <select class="form-select" id="groupSelect">
+                                <option value="">Qrup seçin...</option>
+                                <option value="Front-end A1">Front-end A1</option>
+                                <option value="Python B2">Python B2</option>
+                                <option value="Data Science C3">Data Science C3</option>
+                            </select>
+                        </div>
+                        <div class="col-md-5">
+                            <label for="dateSelect" class="form-label">Tarix</label>
+                            <input type="date" class="form-control" id="dateSelect">
+                        </div>
+                        <div class="col-md-2">
+                            <button type="submit" class="btn btn-primary w-100">Göstər</button>
+                        </div>
+                    </div>
+                </form>
+
+                <hr class="my-4">
+
+                <div id="attendanceTableContainer" class="d-none">
+                    <h5 class="mb-3">Davamiyyət Qeydi (<span id="selectedGroup"></span> - <span id="selectedDate"></span>)</h5>
+                    <div class="table-responsive">
+                        <table class="table table-hover align-middle">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Tələbə Adı</th>
+                                    <th>Davamiyyət</th>
+                                </tr>
+                            </thead>
+                            <tbody id="studentsTableBody">
+                                </tbody>
+                        </table>
+                    </div>
+                    <div class="d-grid mt-3">
+                        <button id="saveAttendanceBtn" class="btn btn-success">Yadda Saxla</button>
+                    </div>
+                </div>
+
+                <div id="noDataMessage" class="alert alert-info mt-4 d-block">
+                    Zəhmət olmasa, yuxarıdakı sahələri doldurub davamiyyəti göstərin.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./assets/vendors/bootstrap.bundle.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
